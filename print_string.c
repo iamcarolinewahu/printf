@@ -1,11 +1,8 @@
 #include "main.h"
-
 /**
- * print_string - prints a string to stdout
- *
- * @val: argument
- *
- * Return: the length of the string
+ * print_string - print a string.
+ * @val: argumen t.
+ * Return: the length of the string.
  */
 
 int print_string(va_list val)
@@ -19,19 +16,14 @@ int print_string(va_list val)
 		s = "(null)";
 		len = _strlen(s);
 		for (i = 0; i < len; i++)
-		{
 			_putchar(s[i]);
-			return (len);
-		}
+		return (len);
 	}
 	else
 	{
 		len = _strlen(s);
 		for (i = 0; i < len; i++)
-		{
 			_putchar(s[i]);
-		}
-
+		return (len);
 	}
-	return (len);
 }
