@@ -2,7 +2,7 @@
 
 
 /**
- * printf - function to print to stdout
+ * _printf - function to print to stdout
  *
  * @format: string being passed
  *
