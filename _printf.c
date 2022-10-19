@@ -10,6 +10,7 @@
  */
 int print_op(const char *format, fmt_t *print_arr, va_list list)
 {
+<<<<<<< HEAD
 	char a;
 	int count = 0, b = 0, c = 0;
 
@@ -66,4 +67,16 @@ int _printf(const char *format, ...)
 	a = print_op(format, ops, list);
 	va_end(list);
 	return (a);
+=======
+	int res;
+
+	va_list args;
+
+	va_start(args, format);
+
+	res = vfprintf(stdout, format, arg);
+
+	va_end(args);
+	return (res);
+>>>>>>> c81aaec677f99eded1e63d4c91abfcd2b2d69009
 }
