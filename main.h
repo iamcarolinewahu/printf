@@ -3,6 +3,6 @@
 
 #include <stdio.h>
 
-int _printf(const char *format, ...);
+int printf(const char *format, ...);
 
 #endif

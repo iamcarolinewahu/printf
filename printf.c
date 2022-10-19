@@ -3,22 +3,20 @@
 
 /**
  * printf - function to print to stdout
- * 
+ *
  * @format: string being passed
- * 
+ *
  * Return: numb of char to be printed
  */
 
-int _printf(const char *format, ...)
+int printf(const char *format, ...)
 {
-	int res;
+	va_list arg;
+	int done;
 
-	va_list args;
+	va_start(arg, format);
 
-	va_start(args, format);
+	done = vfprintf(stdout, format, arg);
 
-	res = vfprintf(stdout, format, args);
-
-	va_end(args);
-	return (res);
+	return (done);
 }
