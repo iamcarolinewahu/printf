@@ -23,7 +23,7 @@ int _printf(const char *format, ...)
 		return (-1);
 
 loop:
-	while (format[1] != '\0')
+	while (format[i] != '\0')
 	{
 		j = 3;
 		while (j >= 0)
