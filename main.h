@@ -16,11 +16,12 @@
 
 typedef struct format
 {
-	char *id;
+	char *type;
 	int (*f)();
-} change_match;
+} fmt_t;
 
 int _printf(const char *format, ...);
+int print_op(const char *format, fmt_t *print_arr, va_list list);
 int print_char(va_list val);
 int print_string(va_list val);
 int print_percent(void);
