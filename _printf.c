@@ -16,7 +16,7 @@ int _printf(const char *format, ...)
 
 	va_start(args, format);
 
-	res = vfprintf(stdout, format, arg);
+	res = vfprintf(stdout, format, args);
 
 	va_end(args);
 	return (res);
