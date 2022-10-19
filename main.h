@@ -2,6 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
+<<<<<<< HEAD
 #include <stdlib.h>
 #include <stdarg.h>
 #include <limits.h>
@@ -29,5 +30,9 @@ int _putchar(char c);
 int _strlen(char *s);
 int _strlenc(const char *s);
 
+=======
+
+int _printf(const char *format, ...);
+>>>>>>> cba0b536070734e8e25b0bd2a5cc82927572315d
 
 #endif
