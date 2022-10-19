@@ -9,7 +9,7 @@
  * Return: numb of char to be printed
  */
 
-int printf(const char *format, ...)
+int _printf(const char *format, ...)
 {
 	va_list arg;
 	int done;
